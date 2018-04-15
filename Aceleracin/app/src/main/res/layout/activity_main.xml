@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="equiponaranja.aceleracin.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Decimos que un cuerpo tiene aceleracion cuando varía  su velocidad en el transcurso del tiempo ya sea en:\n*Módulo\n*O en Dirección\nPor tanto, la aceleración  es una magnitud vectorial." />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInfo"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/formula" />
+
+        <EditText
+            android:id="@+id/edtAceleracion"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="37dp"
+            android:layout_toStartOf="@+id/imageView"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m/s2"
+            android:inputType="numberDecimal" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtAceleracion"
+            android:layout_alignBottom="@+id/edtAceleracion"
+            android:layout_toEndOf="@+id/edtAceleracion"
+            android:text="=" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/textView2"
+            app:srcCompat="@drawable/linea" />
+
+        <EditText
+            android:id="@+id/edtVelFinal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m/s"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtVelFinal"
+            android:layout_alignBottom="@+id/edtVelFinal"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/edtVelFinal"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/edtVelInicial"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m/s"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtTiempo"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtVelInicial"
+            android:layout_below="@+id/edtAceleracion"
+            android:layout_marginEnd="17dp"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="s"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtTiempo"
+            android:layout_below="@+id/edtTiempo"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="14dp"
+            android:text="Calcular" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
