@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="equiponaranja.caidalibre.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="7.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/txvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="La caída libre es un movimiento rectilíneo uniformemente acelerado (m.r.u.a.) o movimiento rectilíneo uniformemente variado (m.r.u.v.) en el que se deja caer un cuerpo verticalmente desde cierta altura y no encuentra resistencia alguna en su camino. Las ecuaciones de la caída libre son:" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvInfo"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/form1" />
+
+        <EditText
+            android:id="@+id/edtY1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/imageView"
+            android:ems="10"
+            android:hint="m"
+            android:inputType="numberSigned|numberDecimal"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtY1"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@+id/edtY1"
+            android:text="="
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtH"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/textView2"
+            android:ems="10"
+            android:hint="m"
+            android:inputType="numberSigned|numberDecimal"
+            android:gravity="end"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toEndOf="@+id/edtH"
+            app:srcCompat="@drawable/unmedio" />
+
+        <EditText
+            android:id="@+id/edtG1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:ems="10"
+            android:hint="m/s^2"
+            android:inputType="numberDecimal"
+            android:text="9.81"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/edtT1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/edtG1"
+            android:ems="10"
+            android:hint="s"
+            android:inputType="numberDecimal"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edtT1"
+            android:layout_toEndOf="@+id/edtT1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnForm1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginEnd="8dp"
+            android:text="Calcular" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/btnForm1"
+            android:layout_below="@+id/btnForm1"
+            app:srcCompat="@drawable/form2" />
+
+        <EditText
+            android:id="@+id/edtV2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_toStartOf="@+id/btnForm1"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m/s"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_toEndOf="@+id/edtV2"
+            android:text="="
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_toStartOf="@+id/imageView2"
+            android:text="-"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtG2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_toEndOf="@+id/textView5"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="9.81"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="536dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@+id/edtG2"
+            android:text="."
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtT2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/edtG2"
+            android:layout_alignBottom="@+id/edtG2"
+            android:layout_toEndOf="@+id/imageView5"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="s"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnForm2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtV2"
+            android:layout_toEndOf="@+id/edtV2"
+            android:text="Calcular" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnForm2"
+            android:layout_toEndOf="@+id/textView4"
+            app:srcCompat="@drawable/form3" />
+
+        <EditText
+            android:id="@+id/edtA3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_toStartOf="@+id/edtG2"
+            android:ems="10"
+            android:hint="m/s^2"
+            android:inputType="numberDecimal"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_toEndOf="@+id/edtA3"
+            android:text="="
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginEnd="9dp"
+            android:layout_toStartOf="@+id/edtG3"
+            android:text="-"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtG3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/edtT2"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="m/s^2"
+            android:inputType="numberDecimal"
+            android:text="9.81"
+            android:gravity="end"/>
+
+        <Button
+            android:id="@+id/btnForm3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_below="@+id/edtA3"
+            android:text="Calcular" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
