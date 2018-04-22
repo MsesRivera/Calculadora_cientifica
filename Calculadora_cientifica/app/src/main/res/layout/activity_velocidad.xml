@@ -6,4 +6,107 @@
     android:layout_height="match_parent"
     tools:context=".VelocidadActivity">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayoutVel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtDefinicionVel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="La velocidad puede definirse como la cantidad de espacio recorrido por unidad de tiempo con la que un cuerpo se desplaza en una determinada dirección y sentido. Se trata de un vector cuyo módulo, su valor numérico,se puede expresar con una funcion matematica."
+            android:visibility="visible"
+            tools:text="La velocidad puede definirse como la cantidad de espacio recorrido por unidad de tiempo con la que un cuerpo se desplaza en una determinada dirección y sentido. Se trata de un vector cuyo módulo, su valor numérico,se puede expresar con una funcion matematica." />
+
+        <EditText
+            android:id="@+id/edtVelVel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtDefinicionVel"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m/s"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/txtIgualVel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtVelVel"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/edtVelVel"
+            android:text="=" />
+
+        <EditText
+            android:id="@+id/edtDistanciaVel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView5Vel"
+            android:layout_alignStart="@+id/btnCalcVel"
+            android:layout_marginStart="23dp"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtTiempoVel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edtDistanciaVel"
+            android:layout_below="@+id/txtIgualVel"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="s"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalcVel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTiempoVel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="Calcular" />
+
+        <ImageView
+            android:id="@+id/imageView5Vel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtIgualVel"
+            android:layout_toEndOf="@+id/txtIgualVel"
+            app:srcCompat="@drawable/lineasuperrectavel" />
+
+        <ImageView
+            android:id="@+id/imageViewVel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCalcVel"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/formVel" />
+
+        <ImageButton
+            android:id="@+id/ibtnMenuVel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/menuico" />
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

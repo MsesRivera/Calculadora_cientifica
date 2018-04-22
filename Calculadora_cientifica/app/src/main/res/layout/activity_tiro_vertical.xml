@@ -76,59 +76,59 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/txvT1Tiro"
             android:layout_alignBottom="@+id/txvT1Tiro"
-            android:layout_toEndOf="@+id/edtH1Tirob"
+            android:layout_toEndOf="@+id/edtH1Tiro"
             android:gravity="center"
             android:text="+\n-"
             android:textAppearance="@android:style/TextAppearance.Large" />
 
         <EditText
-            android:id="@+id/edtVo1"
+            android:id="@+id/edtVo1Tiro"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_alignBaseline="@+id/textView3"
-            android:layout_alignBottom="@+id/textView3"
-            android:layout_toEndOf="@+id/textView5"
+            android:layout_alignBaseline="@+id/textView3Tiro"
+            android:layout_alignBottom="@+id/textView3Tiro"
+            android:layout_toEndOf="@+id/textView5Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="m/s"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/edtT1"
+            android:id="@+id/edtT1Tiro"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/imageView"
-            android:layout_toEndOf="@+id/edtVo1"
+            android:layout_below="@+id/imageViewTiro"
+            android:layout_toEndOf="@+id/edtVo1Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="s"
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView6Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/edtT1"
-            android:layout_alignBottom="@+id/edtT1"
-            android:layout_toEndOf="@+id/edtT1"
+            android:layout_alignBaseline="@+id/edtT1Tiro"
+            android:layout_alignBottom="@+id/edtT1Tiro"
+            android:layout_toEndOf="@+id/edtT1Tiro"
             android:gravity="center"
             android:text="-"
             android:textAppearance="@android:style/TextAppearance.Large" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView2Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView8"
-            android:layout_toEndOf="@+id/imageView4"
+            android:layout_below="@+id/textView8Tiro"
+            android:layout_toEndOf="@+id/imageView4Tiro"
             app:srcCompat="@drawable/unmediotiro" />
 
         <EditText
-            android:id="@+id/edtG1"
+            android:id="@+id/edtG1Tiro"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/imageView"
-            android:layout_toEndOf="@+id/imageView2"
+            android:layout_below="@+id/imageViewTiro"
+            android:layout_toEndOf="@+id/imageView2Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="m/s^2"
@@ -136,97 +136,97 @@
             android:text="9.81" />
 
         <TextView
-            android:id="@+id/txvT1"
+            android:id="@+id/txvT1Tiro"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/edtG1"
-            android:layout_toEndOf="@+id/edtG1"
+            android:layout_alignTop="@+id/edtG1Tiro"
+            android:layout_toEndOf="@+id/edtG1Tiro"
             android:gravity="end"
             android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textView8Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/txvT1"
-            android:layout_alignEnd="@+id/txvT1"
+            android:layout_above="@+id/txvT1Tiro"
+            android:layout_alignEnd="@+id/txvT1Tiro"
             android:text="2" />
 
         <Button
-            android:id="@+id/btnForm1"
+            android:id="@+id/btnForm1Tiro"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_alignEnd="@+id/textView6"
-            android:layout_below="@+id/edtVo1"
+            android:layout_alignEnd="@+id/textView6Tiro"
+            android:layout_below="@+id/edtVo1Tiro"
             android:text="Calcular" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView4Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnForm1"
+            android:layout_below="@+id/btnForm1Tiro"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5Tiro"
             app:srcCompat="@drawable/form2tiro" />
 
         <EditText
-            android:id="@+id/edtV2"
+            android:id="@+id/edtV2Tiro"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_alignStart="@+id/edtY1"
-            android:layout_below="@+id/imageView4"
+            android:layout_alignStart="@+id/edtY1Tiro"
+            android:layout_below="@+id/imageView4Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="m/s"
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView9Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/edtV2"
+            android:layout_alignBottom="@+id/edtV2Tiro"
             android:layout_marginBottom="9dp"
-            android:layout_toEndOf="@+id/edtV2"
+            android:layout_toEndOf="@+id/edtV2Tiro"
             android:text="="
             android:textAppearance="@android:style/TextAppearance.Large" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/textView10Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/imageView4"
+            android:layout_alignTop="@+id/imageView4Tiro"
             android:layout_marginTop="20dp"
-            android:layout_toEndOf="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9Tiro"
             android:text="+\n-"
             android:textAppearance="@android:style/TextAppearance.Large"
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edtVo2"
+            android:id="@+id/edtVo2Tiro"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/imageView4"
-            android:layout_toEndOf="@+id/textView10"
+            android:layout_below="@+id/imageView4Tiro"
+            android:layout_toEndOf="@+id/textView10Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="m/s"
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textView11Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView9"
-            android:layout_toEndOf="@+id/edtVo2"
+            android:layout_alignBottom="@+id/textView9Tiro"
+            android:layout_toEndOf="@+id/edtVo2Tiro"
             android:text="-"
             android:textAppearance="@android:style/TextAppearance.Large" />
 
         <EditText
-            android:id="@+id/edtG2"
+            android:id="@+id/edtG2Tiro"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/imageView4"
-            android:layout_toEndOf="@+id/textView11"
+            android:layout_below="@+id/imageView4Tiro"
+            android:layout_toEndOf="@+id/textView11Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="m/s^2"
@@ -234,73 +234,73 @@
             android:text="9.81" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textView12Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView4"
-            android:layout_toEndOf="@+id/edtG2"
+            android:layout_below="@+id/imageView4Tiro"
+            android:layout_toEndOf="@+id/edtG2Tiro"
             android:text="."
             android:textAppearance="@android:style/TextAppearance.Large" />
 
         <EditText
-            android:id="@+id/edtT2"
+            android:id="@+id/edtT2Tiro"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/imageView4"
-            android:layout_toEndOf="@+id/textView12"
+            android:layout_below="@+id/imageView4Tiro"
+            android:layout_toEndOf="@+id/textView12Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="s"
             android:inputType="numberDecimal" />
 
         <Button
-            android:id="@+id/btnForm2"
+            android:id="@+id/btnForm2Tiro"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_alignBaseline="@+id/textView11"
-            android:layout_alignBottom="@+id/textView11"
-            android:layout_toEndOf="@+id/imageView2"
+            android:layout_alignBaseline="@+id/textView11Tiro"
+            android:layout_alignBottom="@+id/textView11Tiro"
+            android:layout_toEndOf="@+id/imageView2Tiro"
             android:text="Calcular" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView5Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/btnForm3"
-            android:layout_below="@+id/textView10"
+            android:layout_alignStart="@+id/btnForm3Tiro"
+            android:layout_below="@+id/textView10Tiro"
             android:layout_marginTop="15dp"
             app:srcCompat="@drawable/form3tiro" />
 
         <EditText
-            android:id="@+id/edtA3"
+            android:id="@+id/edtA3Tiro"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/imageView5"
+            android:layout_below="@+id/imageView5Tiro"
             android:layout_marginEnd="14dp"
             android:layout_marginTop="12dp"
-            android:layout_toStartOf="@+id/edtT1"
+            android:layout_toStartOf="@+id/edtT1Tiro"
             android:ems="10"
             android:hint="m/s^2"
             android:inputType="numberDecimal"
             android:gravity="end"/>
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textView13Tiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/edtA3"
-            android:layout_alignBottom="@+id/edtA3"
-            android:layout_toEndOf="@+id/edtA3"
+            android:layout_alignBaseline="@+id/edtA3Tiro"
+            android:layout_alignBottom="@+id/edtA3Tiro"
+            android:layout_toEndOf="@+id/edtA3Tiro"
             android:text="= -"
             android:textAppearance="@android:style/TextAppearance.Large" />
 
         <EditText
-            android:id="@+id/edtG3"
+            android:id="@+id/edtG3Tiro"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_alignBaseline="@+id/edtA3"
-            android:layout_alignBottom="@+id/edtA3"
-            android:layout_toEndOf="@+id/textView13"
+            android:layout_alignBaseline="@+id/edtA3Tiro"
+            android:layout_alignBottom="@+id/edtA3Tiro"
+            android:layout_toEndOf="@+id/textView13Tiro"
             android:ems="10"
             android:gravity="end"
             android:hint="m/s^2"
@@ -308,13 +308,23 @@
             android:text="9.81" />
 
         <Button
-            android:id="@+id/btnForm3"
+            android:id="@+id/btnForm3Tiro"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_alignEnd="@+id/btnForm1"
-            android:layout_below="@+id/edtA3"
+            android:layout_alignEnd="@+id/btnForm1Tiro"
+            android:layout_below="@+id/edtA3Tiro"
             android:layout_marginTop="6dp"
             android:text="Calcular" />
+
+        <ImageButton
+            android:id="@+id/ibtnMenuTiro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/edtY1Tiro"
+            android:layout_marginBottom="31dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/menuico" />
 
     </RelativeLayout>
 
