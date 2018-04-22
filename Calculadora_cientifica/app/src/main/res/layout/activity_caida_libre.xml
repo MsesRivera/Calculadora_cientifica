@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaidaLibreActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCai"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="7.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/txvInfoCai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/info_cai" />
+
+        <ImageView
+            android:id="@+id/imageViewCai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvInfoCai"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/form1cai" />
+
+        <EditText
+            android:id="@+id/edtY1Cai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageViewCai"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/imageViewCai"
+            android:ems="10"
+            android:hint="m"
+            android:inputType="numberSigned|numberDecimal"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView2Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtY1Cai"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@+id/edtY1Cai"
+            android:text="="
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtHCai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageViewCai"
+            android:layout_toEndOf="@+id/textView2Cai"
+            android:ems="10"
+            android:hint="m"
+            android:inputType="numberSigned|numberDecimal"
+            android:gravity="end"/>
+
+        <ImageView
+            android:id="@+id/imageView2Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2Cai"
+            android:layout_toEndOf="@+id/edtHCai"
+            app:srcCompat="@drawable/unmediocai" />
+
+        <EditText
+            android:id="@+id/edtG1Cai"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView2Cai"
+            android:layout_toEndOf="@+id/imageView2Cai"
+            android:ems="10"
+            android:hint="m/s^2"
+            android:inputType="numberDecimal"
+            android:text="9.81"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/edtT1Cai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageViewCai"
+            android:layout_toEndOf="@+id/edtG1Cai"
+            android:ems="10"
+            android:hint="s"
+            android:inputType="numberDecimal"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView3Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edtT1Cai"
+            android:layout_toEndOf="@+id/edtT1Cai"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnForm1Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/imageViewCai"
+            android:layout_below="@+id/imageView2Cai"
+            android:layout_marginEnd="8dp"
+            android:text="Calcular" />
+
+        <ImageView
+            android:id="@+id/imageView3Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/btnForm1Cai"
+            android:layout_below="@+id/btnForm1Cai"
+            app:srcCompat="@drawable/form2cai" />
+
+        <EditText
+            android:id="@+id/edtV2Cai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView3Cai"
+            android:layout_toStartOf="@+id/btnForm1Cai"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="m/s"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView4Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3Cai"
+            android:layout_toEndOf="@+id/edtV2Cai"
+            android:text="="
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/textView5Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3Cai"
+            android:layout_toStartOf="@+id/imageView2Cai"
+            android:text="-"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtG2Cai"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView3Cai"
+            android:layout_toEndOf="@+id/textView5Cai"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="9.81"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="536dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView6Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView5Cai"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@+id/edtG2Cai"
+            android:text="."
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtT2Cai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/edtG2Cai"
+            android:layout_alignBottom="@+id/edtG2Cai"
+            android:layout_toEndOf="@+id/imageView5Cai"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="s"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnForm2Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtV2Cai"
+            android:layout_toEndOf="@+id/edtV2Cai"
+            android:text="Calcular" />
+
+        <ImageView
+            android:id="@+id/imageView5Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnForm2Cai"
+            android:layout_toEndOf="@+id/textView4Cai"
+            app:srcCompat="@drawable/form3cai" />
+
+        <EditText
+            android:id="@+id/edtA3Cai"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView5Cai"
+            android:layout_toStartOf="@+id/edtG2Cai"
+            android:ems="10"
+            android:hint="m/s^2"
+            android:inputType="numberDecimal"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/textView7Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5Cai"
+            android:layout_toEndOf="@+id/edtA3Cai"
+            android:text="="
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/textView8Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5Cai"
+            android:layout_marginEnd="9dp"
+            android:layout_toStartOf="@+id/edtG3"
+            android:text="-"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <EditText
+            android:id="@+id/edtG3Cai"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/edtT2Cai"
+            android:layout_below="@+id/imageView5Cai"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="m/s^2"
+            android:inputType="numberDecimal"
+            android:text="9.81"
+            android:gravity="end"/>
+
+        <Button
+            android:id="@+id/btnForm3Cai"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/textView6Cai"
+            android:layout_below="@+id/edtA3Cai"
+            android:text="Calcular" />
+
+        <ImageButton
+            android:id="@+id/ibtnMenuCai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:layout_toEndOf="@+id/edtT1Cai"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/menuico" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
